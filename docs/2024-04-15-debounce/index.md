@@ -51,4 +51,15 @@ It can be imported like so:
 import {debounce} from "./debounce.js";
 ```
 
-This implementation is adapted [my earlier notebook](https://observablehq.com/@mbostock/debouncing-input).
+If you’d prefer to use [lodash](https://lodash.com/docs#debounce) instead, you could implement `debounce` like so:
+
+```js run=false
+function debounce(input, delay = 1000) {
+  return Generators.observe((notify) => {
+    notify = _.debounce(notify, delay);
+    const inputted = () => notify(input.value);
+    input.addEventListener("input", inputted), inputted();
+    return () => input.removeEventListener("input", inputted);
+  });
+}
+```
