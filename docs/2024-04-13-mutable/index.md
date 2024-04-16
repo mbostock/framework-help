@@ -1,4 +1,4 @@
-# 2024-04-13 Mutables
+# 2024-04-13 Mutable
 
 Ref. https://talk.observablehq.com/t/cant-define-update-a-mutable/9139
 
