@@ -53,7 +53,7 @@ export default {
 </div>
 <script>
 
-document.querySelector("#view-source").href = new URL(location.pathname.replace(/^(\\/framework-help)?\\//, ""), "https://github.com/mbostock/framework-help/tree/main/docs/");
+document.querySelector("#view-source").href = new URL(location.pathname.replace(/^(\\/framework-help)?\\//, ""), "https://github.com/mbostock/framework-help/tree/main/src/");
 
 </script>`
 };
