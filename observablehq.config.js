@@ -2,6 +2,7 @@ export default {
   title: "Mike’s Framework Help",
   toc: false,
   search: true,
+  root: "src",
   head: '<link rel="icon" href="observable.png" type="image/png" sizes="32x32">',
   header: `<style>
 
