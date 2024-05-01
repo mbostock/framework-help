@@ -52,7 +52,7 @@ You’ll typically have to set the **height** manually when using the **domain**
 
 </div>
 
-The data in this example is loaded as [TopoJSON](https://observablehq.com/framework/lib/topojson) from [us-atlas](https://github.com/topojson/us-atlas). 37 is the [FIPS code](https://en.wikipedia.org/wiki/Federal_Information_Processing_Standard_state_code) for the state of North Carolina.
+The data in this example is loaded as [TopoJSON](https://observablehq.com/framework/lib/topojson) from [us-atlas](https://github.com/topojson/us-atlas). 37 is the [FIPS code](https://en.wikipedia.org/wiki/Federal_Information_Processing_Standard_state_code) for the state of North Carolina. If you wanted, you could use a data loader to filter the data at build time to improve performance; you could also load higher-resolution data from the U.S. Census Bureau.
 
 ```js echo
 const us = fetch(import.meta.resolve("npm:us-atlas/counties-10m.json")).then((r) => r.json());
